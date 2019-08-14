@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  margin: 0px;
+  font-family: 'Corben';
+  background-image: linear-gradient(to bottom, #D6DBDF, #566573);
+}
+
+.topheader{
+  background-image: linear-gradient(to bottom, #154360, #17202A);
+  color: white;
+  text-align: left;
+  height: 280px;
+  padding: 10px;
+  margin: 10px 10px 0px 10px;
+}
+
+#pp{
+  margin: 25px;
+  margin-left: 90px;
+  width: 225px;
+  height: 225px;
+  float: left;
+  border: solid 2px white;
+  border-radius: 200px;
+}
+
+.perfil{
+  font-size: 32px;
+  text-align: center;
+  border: solid 5px;
+}
+
+.navigation{
+  margin: 10px 10px 0px 10px;
+  height: 100px;
+}
+
+.main {
+  padding: 10px;
+}
+
+#bg1 {
+  width: 66%;
+  height: 500px;
+}
+
+nav ul{
+  list-style-type: none;
+  color: white;
+}
+
+nav ul li{
+  display: inline;
+}
+
+.contact{
+  text-align: center;
+  padding: 12px;
+  height: 500px;
+  width: 32.5%;
+  background-image: linear-gradient(to bottom, #D5DBDB, #FBFCFC);
+  margin: 10px 10px 10px 10px;
+  border: solid 2px black;
+  font-size: 16px;
+}
+
+.contact h2 {
+  text-decoration: underline;
+}
+
+footer{
+  padding: 5px;
+  text-align: center;
+  background-color: #dadae6;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  clear: both;
+  margin: 0px 10px 10px 10px;
+}
+
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+button{
+  /* border-left: solid 8px; */
+  /* border-radius: 10px; */
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Corben';
+}
+
+.contact i{
+  font-size: 28px;
+}
+
+button:hover{
+  background-color: #000000;
+}
+
+.opciones{
+  background-color: #34495E;
+  width: 33%;
+}
+
+aside {
+  width: 23%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
