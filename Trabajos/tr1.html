@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portafolio</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./stylestr1.css">
+  <link href='https://fonts.googleapis.com/css?family=Corben' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/1927c2f92b.js"></script>
+</head>
+<body>
+
+	<header>
+
+      <div class="topheader">
+        <img id="pp" src="../Imagenes/profilepic.jpg">
+        <div class="perfil">
+          <h2>Isaac Mena López</h2>
+          <h2>2016130651</h2>
+          <h2>Semana 3: Sintaxis HTML5 y CSS3</h2>
+        </div>
+      </div>
+
+	</header>
+
+  <nav class="navigation">
+      <ul>
+          <li>
+            <button class="opciones" onclick="window.location.href = './clase.html';">
+              <i class="fas fa-book"></i>
+              <p>Trabajo en Clase</p>
+            </button>
+          </li>
+          <li>
+            <button class="opciones" onclick="window.location.href = './tareas.html';">
+              <i class="fas fa-pencil-alt"></i>
+              <p>Tareas</p>
+            </button>
+          </li>
+          <li>
+            <button class="opciones" onclick="window.location.href = './labs.html';">
+              <i class="fas fa-laptop"></i>
+              <p>Laboratorios</p>
+            </button>
+          </li>
+        </ul>
+    </nav>
+
+    <section class="main">
+      <div class="html">
+        <h3>Etiquetas HTML</h3>
+        <table>
+          <tr>
+            <th>Nombre</th>
+            <th>Propósito</th>
+            <th>Sintaxis</th>
+            <th>Atributos importantes</th>
+            <th>Ejemplo</th>
+          </tr>
+          <tr>
+            <td>Title</td>
+            <td>Dar el título de la página</td>
+            <td><code>&lt;title&gt;&lt;/title&gt;</code></td>
+            <td>-</td>
+            <td><code>&lt;title&gt;Facebook&lt;/title&gt;</code></td>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>Este tag define un link hacia otra página o recurso</td>
+            <td><code>&lt;a&gt;&lt;/a&gt;</code></td>
+            <td>
+              <ul>
+                <li>href: Enlace url al recurso</li>
+                <li>target: Dónde se abrirá el recurso</li>
+              </ul>
+            </td>
+            <td><code>&lt;a href="www.google.com"&gt;Link a Google&lt;/a&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Button</td>
+            <td>Este tag define un botón clickeable. Pueden contener imagenes o texto.</td>
+            <td><code>&lt;button type="button"&gt;&lt;/button&gt;</code></td>
+            <td>
+              <ul>
+                <li>type: Define el tipo de botón (button, reset, submit)</li>
+                <li>value: Define el valor inicial del botón</li>
+              </ul>
+            </td>
+            <td><code>&lt;button type="button"&gt;Click Me!&lt;/button&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Div</td>
+            <td>Define una división o sección dentro de la página. Obliga hacer un salto de línea</td>
+            <td><code>&lt;div&gt;&lt;/div&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><code>&lt;div&gt class="main"&gt;Content&lt;/div&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Footer</td>
+            <td>Define un pie de página para una sección o la página en sí.</td>
+            <td><code>&lt;footer&gt;&lt;/footer&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><code>&lt;footer&gt;&lt;Content&lt;/footer&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Form</td>
+            <td>Se usa para crear un formulario HTML para recibir inputs del usuario</td>
+            <td><code>&lt;form&gt;&lt;/form&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+                <li>action: Lugar donde se enviarán los datos del usuario</li>
+                <li>method: Especifica cuál tipo de método de HTTP utilizar</li>
+              </ul>
+            </td>
+            <td>
+              <form class="form1" action="index.html" method="post">
+                <input type="text" name="" value="" placeholder="Nombre">
+                <input type="number" name="" value="" placeholder="18">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Headings</td>
+            <td>Usados para proveeer títulos y subtítulos. Generan un bloque nuevo dentro de la página</td>
+            <td><code>&lt;h4&gt;Texto&lt;/h4&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><h4>Este es un heading de prueba</h4></td>
+          </tr>
+          <tr>
+            <td>Header</td>
+            <td>Representa un contenedor para para introducir contenido</td>
+            <td><code>&lt;header&gt;&lt;/header&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><code>&lt;header&gt;Isaac Mena López&lt;/header&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Image</td>
+            <td>Permite incluir imágenes en la página</td>
+            <td><code>&lt;img src="url" alt="nombre"&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+                <li>scr: Url de la imagen, puede ser local o de un servidor</li>
+                <li>alt: Mensaje que se mostrará cuando la imagen no cargue correctamente</li>
+                <li>width: Ancho de la imagen, por defecto se acopla al de la imagen</li>
+                <li>height: Alto de la imagen, por defecto se acopla al de la imagen</li>
+              </ul>
+            </td>
+            <td>
+                <img src="../Imagenes/bg.jpg" alt="fondo1" width="200px" height="160px">
+            </td>
+          </tr>
+          <tr>
+            <td>Link</td>
+            <td>Define un enlace entre la página y un recurso externo</td>
+            <td><code>&lt;link rel="relación" type="tipo de recurso" href="url"&gt;</code></td>
+            <td>
+              <ul>
+                <li>href: url del recurso</li>
+                <li>rel: relación entre la página y el recurso (estilos, licencia, etc)</li>
+                <li>type: tipo del recurso (javascript, css, icon)</li>
+              </ul>
+            </td>
+            <td><code>&lt;link rel="stylesheet" type="text/css" href="url"&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Navigation</td>
+            <td>Define un espacio para elementos de navegación</td>
+            <td><code>&lt;nav&gt;Elementos&lt;/nav&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td>
+              <nav>
+                <a href="#">Link1</a>
+                <a href="#">Link2</a>
+                <a href="#">Link2</a>
+              </nav>
+            </td>
+          </tr>
+          <tr>
+            <td>Paragraph</td>
+            <td>Define un párrafo</td>
+            <td><code>&lt;p&gt;Texto&lt;/p&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td>
+              <p>Este es un párrafo de ejemplo</p>
+            </td>
+          </tr>
+          <tr>
+            <td>S</td>
+            <td>Tacha el texto para informar que no es correcto</td>
+            <td><code>&lt;s&gt;Texto&lt;/s&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><code><s>Este texto no es correcto</s></code></td>
+          </tr>
+          <tr>
+            <td>Input</td>
+            <td>Es un espacio donde un usario puede introducir datos</td>
+            <td><code>&lt;input type="tipo de dato" name="nombre del input" value="valor por defecto" placeholder="valor por defecto"&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+                <li>type: tipo de dato</li>
+                <li>name: nombre del input</li>
+                <li>value: valor por defecto (el usuario tiene que borrarlo para escribir)</li>
+                <li>placeholder: valor por defecto (se quita cuando un usuario escribe)</li>
+              </ul>
+            </td>
+            <td>
+              <input type="text" name="" value="" placeholder="Nombre">
+            </td>
+          </tr>
+          <tr>
+            <td>Style</td>
+            <td>Se usa para proveer estilos a la página internamente</td>
+            <td><code>&lt;style&gt;Estilos CSS&lt;/style&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+                <li>Type</li>
+                <li>Media</li>
+              </ul>
+            </td>
+            <td><code>&lt;style&gt;* {margin: 0px;}&lt;/style&gt;</code></td>
+          </tr>
+        </table>
+      </div>
+      <div class="html5">
+        <h3>Etiquetas HTML5</h3>
+        <table>
+          <th>Nombre</th>
+          <th>Propósito</th>
+          <th>Sintaxis</th>
+          <th>Atributos importantes</th>
+          <th>Ejemplo</th>
+          <tr>
+            <td>Article</td>
+            <td>Definir contenido independiente</td>
+            <td><code>&lt;article&gt;Contenido&lt;/article&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><article>Contenido dentro de un article</article></td>
+          </tr>
+          <tr>
+            <td>Aside</td>
+            <td>Define contenido a un lado de donde se encuentra</td>
+            <td><code>&lt;aside&gt;Contenido&lt;/aside&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><aside>Contenido dentro de un aside</aside></td>
+          </tr>
+          <tr>
+            <td>Figure</td>
+            <td>Especifica contenido independiente del contenido principal, no afecta el flujo de este.</td>
+            <td><code>&lt;figure&gt;Contenido&lt;/figure&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><ficure>Photo, diagrama, ilustraciones</figure></td>
+          </tr>
+          <tr>
+            <td>Main</td>
+            <td>Define el contenido principal de la página, el cotenido no puede ser repetido</td>
+            <td><code>&lt;main&gt;Contenido único&lt;/main&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><article>Contenido dentro de un article</article></td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Resalta contenido</td>
+            <td><code>&lt;mark&gt;Texto importante&lt;/mark&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><article>Contenido dentro de un article</article></td>
+          </tr>
+          <tr>
+            <td>Footer</td>
+            <td>Define un pie de página para una sección o la página en sí.</td>
+            <td><code>&lt;footer&gt;&lt;/footer&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><code>&lt;footer&gt;&lt;Content&lt;/footer&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Header</td>
+            <td>Representa un contenedor para para introducir contenido</td>
+            <td><code>&lt;header&gt;&lt;/header&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><code>&lt;header&gt;Isaac Mena López&lt;/header&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Navigation</td>
+            <td>Define un espacio para elementos de navegación</td>
+            <td><code>&lt;nav&gt;Elementos&lt;/nav&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td>
+              <nav>
+                <a href="#">Link1</a>
+                <a href="#">Link2</a>
+                <a href="#">Link2</a>
+              </nav>
+            </td>
+          </tr>
+          <tr>
+            <td>Section</td>
+            <td>Definir secciones en el documento, como capítulos, cabeceras, pies de página, etc.</td>
+            <td><code>&lt;section&gt;Contenido&lt;/section&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td><article>Contenido dentro de un article</article></td>
+          </tr>
+          <tr>
+            <td>Datalist</td>
+            <td>Provee una lista de datos predefinidos para un input</td>
+            <td><code>&lt;datalist id="id name"&gt;&lt;option value="option value"&gt;&lt;/article&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+                <li>id: Id que será utilizado por el input list para desplegar las opciones</li>
+              </ul>
+            </td>
+            <td>
+              <input list="browsers">
+
+              <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td>Canvas</td>
+            <td>Permite dibujar gráficos mediante scripting usualmente Javascript</td>
+            <td><code>&lt;canvas&gt;Script&lt;/canvas&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+              </ul>
+            </td>
+            <td>
+              <canvas id="myCanvas"></canvas>
+
+              <script>
+              var canvas = document.getElementById("myCanvas");
+              var ctx = canvas.getContext("2d");
+              ctx.fillStyle = "#FF0000";
+              ctx.fillRect(0, 0, 80, 80);
+              </script>
+            </td>
+          </tr>
+          <tr>
+            <td>Audio</td>
+            <td>Permite colocar sonido como canciones o streams de audio en la página</td>
+            <td><code>&lt;audio src="url"&gt;&lt;/audio&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+                <li>src: URL del audio</li>
+                <li>autoplay: reproduce automáticamente cuando carga la página</li>
+                <li>controls: provee la interfaz para pausar, adelantar etc</li>
+                <li>loop: deja el audio en un loop infinito de reproducción</li>
+              </ul>
+            </td>
+            <td>
+              <audio src="../Sounds/hello.mp3" controls></audio>
+            </td>
+          </tr>
+          <tr>
+            <td>Video</td>
+            <td>Permite agregar videos o películas a la pagina de formato MP4, OGG o WebM</td>
+            <td><code>&lt;video-*&gt;&lt;/video&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+                <li>src: URL del audio</li>
+                <li>autoplay: reproduce automáticamente cuando carga la página</li>
+                <li>controls: provee la interfaz para pausar, adelantar etc</li>
+                <li>loop: deja el audio en un loop infinito de reproducción</li>
+                <li>poster: URL de la imagen que se muestra mientras carga el video o este no se ha iniciado</li>
+              </ul>
+            </td>
+            <td>
+              <video width="280" height="200" controls>
+                <source src="../Videos/video1.mp4" type="video/mp4">
+              </video>
+            </td>
+          </tr>
+          <tr>
+            <td>Progress</td>
+            <td>Define una barra de progreso</td>
+            <td><code>&lt;progress value="valor actual" max="valor máximo"&gt;&lt;/progress&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+                <li>value: Valor actual de la barra</li>
+                <li>max: Define el valor máximo que puede tomar la barra, por lo generla es 100</li>
+              </ul>
+            </td>
+            <td>
+              <progress value="22" max="100"></progress>
+            </td>
+          </tr>
+          <tr>
+            <td>SVG</td>
+            <td>Contenedor para dibujar gráficos SVG</td>
+            <td><code>&lt;svg width="300" height="250"&gt;Figuras&lt;/svg&gt;</code></td>
+            <td>
+              <ul>
+                <li>*</li>
+                <li>width: Ancho del canvas</li>
+                <li>height: Alto del canvas</li>
+              </ul>
+            </td>
+            <td>
+              <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+              </svg>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <p>* Incluye los atributos globales como <strong>class, id, style</strong>, etc y los Atributos
+        de evento como <strong>onload, onclick, onresize</strong>, etc</p>
+        <br>
+
+      </div>
+      <div class="css">
+        <h3>Etiquetas CSS</h3>
+      </div>
+    </section>
+
+    <aside class="contact">
+      <h2>Contacto</h3>
+      <br>
+      <p>
+        <i class="far fa-envelope-open"></i>
+        <br>
+        <a href="#">xsaco07@gmail.com<a/>
+      </p>
+      <p>
+        <i class="fas fa-mobile-alt"></i>
+        <br>
+        <a href="#">8702-7903<a/>
+      </p>
+      <p>
+        <i class="fab fa-github"></i>
+        <br>
+        <a href="https://github.com/xsaco07">https://github.com/xsaco07<a/>
+      </p>
+      <p>
+        <i class="fab fa-facebook"></i>
+        <br>
+        <a href="https://www.facebook.com/isaac.mena.3">Facebook Isaac Mena<a/>
+      </p>
+    </aside>
+
+    <footer>
+    	<h3>ITCR 2019</h3>
+      <a href="https://github.com/xsaco07/WebProject">Link al proyecto</a>
+      <p>IC8057 Introducción al desarrollo de aplicaciones WEB, IISem 2019</p>
+    </footer>
+
+</body>
+</html>
