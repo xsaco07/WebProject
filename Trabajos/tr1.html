@@ -99,15 +99,24 @@
             <td><code>&lt;div&gt class="main"&gt;Content&lt;/div&gt;</code></td>
           </tr>
           <tr>
-            <td>Footer</td>
-            <td>Define un pie de página para una sección o la página en sí.</td>
-            <td><code>&lt;footer&gt;&lt;/footer&gt;</code></td>
+            <td>Label</td>
+            <td>Define un título o nombre para botones, inputs, progresos.</td>
+            <td><code>&lt;label for="id elemento"&gt;Lable&lt;/label&gt;</code></td>
             <td>
               <ul>
                 <li>*</li>
               </ul>
             </td>
-            <td><code>&lt;footer&gt;&lt;Content&lt;/footer&gt;</code></td>
+            <td>
+              <form action="">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male"><br>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female"><br>
+                <label for="other">Other</label>
+                <input type="radio" name="gender" id="other" value="other"><br><br>
+              </form>
+            </td>
           </tr>
           <tr>
             <td>Form</td>
@@ -139,12 +148,14 @@
             <td><h4>Este es un heading de prueba</h4></td>
           </tr>
           <tr>
-            <td>Header</td>
-            <td>Representa un contenedor para para introducir contenido</td>
-            <td><code>&lt;header&gt;&lt;/header&gt;</code></td>
+            <td>Script</td>
+            <td>Define un espacio para escribir un script</td>
+            <td><code>&lt;script&gt;Código&lt;/script&gt;</code></td>
             <td>
               <ul>
                 <li>*</li>
+                <li>type: tipo de media del archivo</li>
+                <li>src: dirección del recurso</li>
               </ul>
             </td>
             <td><code>&lt;header&gt;Isaac Mena López&lt;/header&gt;</code></td>
@@ -180,20 +191,26 @@
             <td><code>&lt;link rel="stylesheet" type="text/css" href="url"&gt;</code></td>
           </tr>
           <tr>
-            <td>Navigation</td>
-            <td>Define un espacio para elementos de navegación</td>
-            <td><code>&lt;nav&gt;Elementos&lt;/nav&gt;</code></td>
+            <td>Select</td>
+            <td>Permite crear un dropdown-list</td>
+            <td><code>&lt;select&gt;Opciones&lt;/select&gt;</code></td>
             <td>
               <ul>
                 <li>*</li>
+                <li>autofocus</li>
+                <li>disabled</li>
+                <li>form id</li>
+                <li>multiple</li>
+                <li>required</li>
               </ul>
             </td>
             <td>
-              <nav>
-                <a href="#">Link1</a>
-                <a href="#">Link2</a>
-                <a href="#">Link2</a>
-              </nav>
+              <select required multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
             </td>
           </tr>
           <tr>
@@ -485,6 +502,336 @@
       </div>
       <div class="css">
         <h3>Etiquetas CSS</h3>
+        <table>
+          <th>Propiedad</th>
+          <th>Descripción</th>
+          <th>Valores permitidos</th>
+          <th>Ejemplo</th>
+          <tr>
+            <td>background-color</td>
+            <td>Color del fondo de un elemento en la página</td>
+            <td>
+              <ul>
+                <li>color: desde RGB hasta colores por nombre</li>
+                <li>transparent</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo" style="background-color:coral">
+                <p>Texto de ejemplo</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>background-image</td>
+            <td>Imagen de fondo</td>
+            <td>
+              <ul>
+                <li>url: dirección de la imagen</li>
+                <li>none</li>
+                <li>linear-gradient</li>
+                <li>radial-gradient</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo" style="background-image:url('../Imagenes/bg.jpg')">
+                <p>Texto de ejemplo</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>border</td>
+            <td>Especifica propiedades del borde del elemento</td>
+            <td>
+              <ul>
+                <li>border-width</li>
+                <li>border-style</li>
+                <li>border-color</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo" style="border: solid 2px gray">
+                <p>Texto de ejemplo</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>border-style</td>
+            <td>Especifica el estilo del borde</td>
+            <td>
+              <ul>
+                <li>none</li>
+                <li>dotted</li>
+                <li>dashed</li>
+                <li>solid</li>
+                <li>double</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo" style="border-style: dotted">
+                <p>Texto de ejemplo</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>border-radius</td>
+            <td>Define la curva en las esquinas del borde</td>
+            <td>
+              <ul>
+                <li>length: px</li>
+                <li>%</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo" style="border: solid 2px black; border-radius: 50%;">
+                <p>Texto de ejemplo</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>border-spacing</td>
+            <td>Define la distancia entre el borde y bordes adjacentes</td>
+            <td>
+              <ul>
+                <li>length length: horizontal y vertical</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo">
+                <p style="border: 2px solid red; border-spacing:0px 20px">Texto de ejemplo1</p>
+                <p style="border: 2px solid red; border-spacing:0px 20px">Texto de ejemplo2</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>Define el color del texto</td>
+            <td>
+              <ul>
+                <li>color: desde RGB hasta colores por nombre</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo">
+                <p style="color:green">Texto de ejemplo</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>display</td>
+            <td>Especifica el modo de renderizado de la caja (box)</td>
+            <td>
+              <ul>
+                <li>inline</li>
+                <li>block</li>
+                <li>flex</li>
+                <li>inline-block</li>
+                <li>grid</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo">
+                <p style="display:inline">Texto de ejemplo p1</p>
+                <p style="display:inline">Texto de ejemplo p2</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>filter</td>
+            <td>Define efectos visuales en elementos, por lo general imagenes</td>
+            <td>
+              <ul>
+                <li>blur</li>
+                <li>brightness</li>
+                <li>contrast</li>
+                <li>grayscale</li>
+                <li>invert</li>
+                <li>opacity</li>
+                <li>sepia</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo" style="filter:contrast">
+                <img src="../Imagenes/bg3.jpg" width="200px" height="150px" style="filter: grayscale(100%);">
+                <p>Using grayscale 100%</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>float</td>
+            <td>Define cómo flotará el elemento</td>
+            <td>
+              <ul>
+                <li>left</li>
+                <li>right</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo">
+                <p style="float:left">Texto con float</p>
+                <p>No float</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>clear</td>
+            <td>Define en que dirección de un elemento no pueden flotar otros elementos</td>
+            <td>
+              <ul>
+                <li>left</li>
+                <li>right</li>
+                <li>both</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo">
+                <img src="../Imagenes/bg3.jpg" width="200px" height="150px" style="float:left;">
+                <p>No clear</p>
+                <p style="clear:left">Clear</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>margin-top</td>
+            <td>Define un espacio fuera del elemento en la parte superior</td>
+            <td>
+              <ul>
+                <li>length: px</li>
+                <li>%</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo">
+                <p style="margin-top:50px; background-color: yellow">Margin top = 50</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>margin-bottom</td>
+            <td>Define un espacio fuera del elemento en la parte inferior</td>
+            <td>
+              <ul>
+                <li>length: px</li>
+                <li>%</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo">
+                <p style="margin-bottom:50px; background-color: yellow">Margin bottom = 50</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>opacity</td>
+            <td>Define el nivel de opacidad de un elemento</td>
+            <td>
+              <ul>
+                <li>number entre 0.0 y 1.0</li>
+                <li></li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo" style="background-color: white; opacity:0.5">
+                <p>Texto de ejemplo opacidad al 50%</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>outline</td>
+            <td>Define un borde externo</td>
+            <td>
+              <ul>
+                <li>outline-width</li>
+                <li>outline-style</li>
+                <li>outline-color</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo">
+                <p style="outline: 5px dotted green; border: solid 1px black;">Texto de ejemplo</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>padding-top</td>
+            <td>Define una distancia interna superopr entre el contenido del elemento y su exterior</td>
+            <td>
+              <ul>
+                <li>length: px</li>
+                <li>%</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo" style="padding-top: 20px; background-color: yellow;">
+                <p>Texto de ejemplo</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>padding-bottom</td>
+            <td>Define una distancia interna inferior entre el contenido del elemento y su exterior</td>
+            <td>
+              <ul>
+                <li>length: px</li>
+                <li>%</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo" style="padding-bottom: 20px; background-color: yellow;">
+                <p>Texto de ejemplo</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>text-align</td>
+            <td>Define la alineación horizontal del texto</td>
+            <td>
+              <ul>
+                <li>left</li>
+                <li>right</li>
+                <li>center</li>
+                <li>justify</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo">
+                <p style="text-align:left;">Texto alineado a la izq</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>width</td>
+            <td>Define el ancho de un elemento</td>
+            <td>
+              <ul>
+                <li>auto</li>
+                <li>length</li>
+                <li>%</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo" style="width:100px; background-color: yellow;">
+                <p>Width 100px</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>height</td>
+            <td>Define el alto de un elemento</td>
+            <td>
+              <ul>
+                <li>auto</li>
+                <li>length</li>
+                <li>%</li>
+              </ul>
+            </td>
+            <td>
+              <div class="ejemplo" style="height:90px; background-color: yellow;">
+                <p>Height 90px</p>
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
     </section>
 
@@ -517,6 +864,13 @@
     	<h3>ITCR 2019</h3>
       <a href="https://github.com/xsaco07/WebProject">Link al proyecto</a>
       <p>IC8057 Introducción al desarrollo de aplicaciones WEB, IISem 2019</p>
+      <p>Fecha de creación: 15/08/19</p>
+      <p>Referencias: </p>
+      <ul>
+        <li><a href="https://www.w3schools.com/css/default.asp">URL #1</a></li>
+        <li><a href="https://www.w3schools.com/html/html5_new_elements.asp">URL #2</a></li>
+        <li><a href="https://www.w3schools.com/css/default.asp">URL #3</a></li>
+      </ul>
     </footer>
 
 </body>
