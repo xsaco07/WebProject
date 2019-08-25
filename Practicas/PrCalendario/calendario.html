@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendario</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./calendario.css">
+	<script type="text/javascript" src="./calendario.js"></script>
+</head>
+<body>
+
+	<div class="title">
+		<h1 id="titleText">Mi Calendario - Isaac Mena</h1>
+	</div>
+
+	<div id="calendario">
+
+		<div class="calHeader">
+			<div id="anterior" onclick="mesantes()"></div>
+			<h2 id="titulos"></h2>
+			<div id="posterior" onclick="mesdespues()"></div>
+		</div>
+
+
+		<table id="diasc">
+			<tr id="fila0">
+				<th></th><th></th><th></th><th></th><th></th><th></th><th></th>
+			</tr>
+			<tr id="fila1">
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr id="fila2">
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr id="fila3">
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr id="fila4">
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr id="fila5">
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+			<tr id="fila6">
+				<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+			</tr>
+		</table>
+
+		<div id="fechaactual"><input id="todayBtn" type="button" onclick="actualizar()" value="Ir a hoy"></div>
+
+		<div id="buscafecha">
+			<form action="#" name="buscar">
+				<label for="buscames">Mes</label>
+				<select name="buscames">
+					<option value="1">Enero</option>
+					<option value="2">Febrero</option>
+					<option value="3">Marzo</option>
+					<option value="4">Abril</option>
+					<option value="5">Mayo</option>
+					<option value="6">Junio</option>
+					<option value="7">Julio</option>
+					<option value="8">Agosto</option>
+					<option value="9">Septiembre</option>
+					<option value="10">Octubre</option>
+					<option value="11">Noviembre</option>
+					<option value="12">Diciembre</option>
+				</select>
+				<label for="buscaanno">Año</label>
+				<input type="text" name="buscaanno" maxlength="4" size="4">
+				<input type="button" value="Buscar" onclick="mifecha()">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+* {
+	font-family: sans-serif;
+}
+
+body {
+	background-image: url("../../Imagenes/bg2.jpg");
+}
+
+.title {
+	text-align: center;
+}
+
+#titleText {
+	background-color: white;
+	padding: 15px;
+	width: 40%;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+#calendario {
+	margin-left: 31%;
+	width: 35%;
+	padding: 15px;
+	border: solid 3px black;
+	border-radius: 30px;
+	background: #ECF0F1;
+}
+
+.calHeader {
+	border: solid 2px grey;
+	border-radius: 30px;
+	padding: 10px;
+}
+
+#anterior {
+	display: inline;
+	padding: 5px;
+	background-color: #229954;
+	color: white;
+	border-radius: 5px;
+	float: left;
+}
+
+#titulos {
+	display: inline;
+	margin-left: 15%;
+}
+
+#posterior {
+	display: inline;
+	padding: 5px;
+	background-color: #229954;
+	color: white;
+	float: right;
+}
+
+#diasc {
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	border: solid 1px black;
+	border-radius: 30px;
+}
+
+#fechaactual {
+	padding: 15px;
+	text-align: center;
+}
+
+#todayBtn {
+	margin: 5px;
+	height: 40px;
+	width: 80px;
+	font-size: 16px;
+	background-color: #229954;
+	border-radius: 10px;
+	color: white;
+	margin-right: 10px;
+}
+
+#buscafecha {
+	margin-left: 20%;
+}
+
+td {
+	text-align: center;
+}
