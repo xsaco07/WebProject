@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./conversor.css">
-    <script src="https://kit.fontawesome.com/1927c2f92b.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/1927c2f92b.js"></script> -->
     <title>Conversor de divisas</title>
   </head>
   <body>
@@ -22,83 +22,83 @@
 
             <ul id="countriesList">
               <li>
-                <figure style="text-align: center">
+                <figure id="pais0" style="text-align: center">
                   <img class="flag" src="./Imagenes/costa-rica.png" alt="" width="100px" height="100px">
                   <figcaption>Costa Rica</figcaption>
                   <p>Colones - CRC</p>
-                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                  <img class="fav" onclick="starPressed(this, 0)" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
                 </figure>
               </li>
               <li>
-                <figure style="text-align: center">
+                <figure id="pais1" style="text-align: center">
                   <img class="flag" src="./Imagenes/united-states.png" alt="" width="100px" height="100px">
-                  <figcaption>Estados unidos</figcaption>
+                  <figcaption>Estados Unidos</figcaption>
                   <p>Dólares - USA</p>
-                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                  <img class="fav" onclick="starPressed(this, 1)" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
                 </figure>
               </li>
               <li>
-                <figure style="text-align: center">
+                <figure id="pais2" style="text-align: center">
                   <img class="flag" src="./Imagenes/brazil.png" alt="" width="100px" height="100px">
                   <figcaption>Brasil</figcaption>
                   <p>Reales - BR</p>
-                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                  <img class="fav" onclick="starPressed(this, 2)" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
                 </figure>
               </li>
               <li>
-                <figure style="text-align: center">
+                <figure id="pais3" style="text-align: center">
                   <img class="flag" src="./Imagenes/china.png" alt="" width="100px" height="100px">
                   <figcaption>China</figcaption>
                   <p>Yuanes - CH</p>
-                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                  <img class="fav" onclick="starPressed(this, 3)" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
                 </figure>
               </li>
               <li>
-                <figure style="text-align: center">
+                <figure id="pais4" style="text-align: center">
                   <img class="flag" src="./Imagenes/india.png" alt="" width="100px" height="100px">
                   <figcaption>India</figcaption>
                   <p>Rupias - IN</p>
-                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                  <img class="fav" onclick="starPressed(this, 4)" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
                 </figure>
               </li>
               <li>
-                <figure style="text-align: center">
+                <figure id="pais5" style="text-align: center">
                   <img class="flag" src="./Imagenes/japan.png" alt="" width="100px" height="100px">
                   <figcaption>Japón</figcaption>
                   <p>Yenes - JP</p>
-                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                  <img class="fav" onclick="starPressed(this, 5)" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
                 </figure>
               </li>
               <li>
-                <figure style="text-align: center">
+                <figure id="pais6" style="text-align: center">
                   <img class="flag" src="./Imagenes/mexico.png" alt="" width="100px" height="100px">
                   <figcaption>México</figcaption>
                   <p>Pesos - MX</p>
-                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                  <img class="fav" onclick="starPressed(this, 6)" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
                 </figure>
               </li>
               <li>
-                <figure style="text-align: center">
+                <figure id="pais7" style="text-align: center">
                   <img class="flag" src="./Imagenes/peru.png" alt="" width="100px" height="100px">
                   <figcaption>Perú</figcaption>
                   <p>Soles - PR</p>
-                <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                  <img class="fav" onclick="starPressed(this, 7)" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
                 </figure>
               </li>
               <li>
-                <figure style="text-align: center">
+                <figure id="pais8" style="text-align: center">
                   <img class="flag" src="./Imagenes/spain.png" alt="" width="100px" height="100px">
                   <figcaption>España</figcaption>
                   <p>Euros - ES</p>
-                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                  <img class="fav" onclick="starPressed(this, 8)" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
                 </figure>
               </li>
               <li>
-                <figure style="text-align: center">
+                <figure id="pais9" style="text-align: center">
                   <img class="flag" src="./Imagenes/nigeria.png" alt="" width="100px" height="100px">
                   <figcaption>Nigeria</figcaption>
                   <p>Nairas - NG</p>
-                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                  <img class="fav" onclick="starPressed(this, 9)" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
                 </figure>
               </li>
             </ul>
@@ -122,20 +122,26 @@
                   <option value="">Nairas</option>
                 </select>
 
-                <input type="number" name="mount" placeholder="Monto a convertir">
+                <input type="number" id="mountInput" value="" placeholder="Monto a convertir">
                 <br>
                 <button class="btn" type="button" name="button" onclick="convert()">
                   <i class="fas fa-donate"></i>
                   Convertir
                 </button>
-                <button class="btn" type="button" name="button" onclick="clean()">
+                <button class="btn" type="button" name="button" onclick="cleanStars()">
                   <i class="fas fa-eraser"></i>
-                  Limpiar
+                  Limpiar favoritos
+                </button>
+                <button class="btn" type="button" name="button" onclick="cleanMounts()">
+                  <i class="fas fa-eraser"></i>
+                  Limpiar valores
                 </button>
               </form>
             </div>
-
         </div>
       </div>
   </body>
+
+  <script type="text/javascript" src="./conversor.js"></script>
+
 </html>
