@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./conversor.css">
+    <script src="https://kit.fontawesome.com/1927c2f92b.js"></script>
+    <title>Conversor de divisas</title>
+  </head>
+  <body>
+
+      <div class="headerContainer">
+
+        <div class="info">
+          <h1>Conversor de monedas - Isaac Mena López</h1>
+        </div>
+
+      </div>
+
+      <div class="conversorContainer">
+
+        <div class="conversor">
+
+            <ul id="countriesList">
+              <li>
+                <figure style="text-align: center">
+                  <img class="flag" src="./Imagenes/costa-rica.png" alt="" width="100px" height="100px">
+                  <figcaption>Costa Rica</figcaption>
+                  <p>Colones - CRC</p>
+                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                </figure>
+              </li>
+              <li>
+                <figure style="text-align: center">
+                  <img class="flag" src="./Imagenes/united-states.png" alt="" width="100px" height="100px">
+                  <figcaption>Estados unidos</figcaption>
+                  <p>Dólares - USA</p>
+                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                </figure>
+              </li>
+              <li>
+                <figure style="text-align: center">
+                  <img class="flag" src="./Imagenes/brazil.png" alt="" width="100px" height="100px">
+                  <figcaption>Brasil</figcaption>
+                  <p>Reales - BR</p>
+                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                </figure>
+              </li>
+              <li>
+                <figure style="text-align: center">
+                  <img class="flag" src="./Imagenes/china.png" alt="" width="100px" height="100px">
+                  <figcaption>China</figcaption>
+                  <p>Yuanes - CH</p>
+                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                </figure>
+              </li>
+              <li>
+                <figure style="text-align: center">
+                  <img class="flag" src="./Imagenes/india.png" alt="" width="100px" height="100px">
+                  <figcaption>India</figcaption>
+                  <p>Rupias - IN</p>
+                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                </figure>
+              </li>
+              <li>
+                <figure style="text-align: center">
+                  <img class="flag" src="./Imagenes/japan.png" alt="" width="100px" height="100px">
+                  <figcaption>Japón</figcaption>
+                  <p>Yenes - JP</p>
+                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                </figure>
+              </li>
+              <li>
+                <figure style="text-align: center">
+                  <img class="flag" src="./Imagenes/mexico.png" alt="" width="100px" height="100px">
+                  <figcaption>México</figcaption>
+                  <p>Pesos - MX</p>
+                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                </figure>
+              </li>
+              <li>
+                <figure style="text-align: center">
+                  <img class="flag" src="./Imagenes/peru.png" alt="" width="100px" height="100px">
+                  <figcaption>Perú</figcaption>
+                  <p>Soles - PR</p>
+                <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                </figure>
+              </li>
+              <li>
+                <figure style="text-align: center">
+                  <img class="flag" src="./Imagenes/spain.png" alt="" width="100px" height="100px">
+                  <figcaption>España</figcaption>
+                  <p>Euros - ES</p>
+                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                </figure>
+              </li>
+              <li>
+                <figure style="text-align: center">
+                  <img class="flag" src="./Imagenes/nigeria.png" alt="" width="100px" height="100px">
+                  <figcaption>Nigeria</figcaption>
+                  <p>Nairas - NG</p>
+                  <img class="fav" src="./Imagenes/starno.png" alt="" width="40px" height="40px">
+                </figure>
+              </li>
+            </ul>
+
+            <div class="form">
+
+              <form class="" action="#" method="post">
+
+                <label for="mainCountry">Escoga la moneda que desea convertir</label>
+
+                <select name="mainCountry">
+                  <option value="">Colones</option>
+                  <option value="">Dólares</option>
+                  <option value="">Reales</option>
+                  <option value="">Yuanes</option>
+                  <option value="">Rupias</option>
+                  <option value="">Yenes</option>
+                  <option value="">Pesos</option>
+                  <option value="">Soles</option>
+                  <option value="">Euros</option>
+                  <option value="">Nairas</option>
+                </select>
+
+                <input type="number" name="mount" placeholder="Monto a convertir">
+                <br>
+                <button class="btn" type="button" name="button" onclick="convert()">
+                  <i class="fas fa-donate"></i>
+                  Convertir
+                </button>
+                <button class="btn" type="button" name="button" onclick="clean()">
+                  <i class="fas fa-eraser"></i>
+                  Limpiar
+                </button>
+              </form>
+            </div>
+
+        </div>
+      </div>
+  </body>
+</html>
