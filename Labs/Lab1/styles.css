@@ -69,7 +69,7 @@ section .overlay-wcs {
 }
 
 .nav-tabs {
-  border: solid 4px white;
+  border-bottom: solid 4px white;
 }
 
 .nav-tabs .nav-item, .nav-tabs .nav-link {
@@ -84,7 +84,7 @@ section .overlay-wcs {
 }
 
 .nav-tabs .nav-link:hover {
-  border-bottom: solid 8px #1B5E20;
+  border-bottom: solid 10px #1B5E20;
 }
 
 .nav-tabs .nav-link.active {
@@ -92,7 +92,7 @@ section .overlay-wcs {
     /* background-color: #6D4C41; */
     background-color: #9CCC65;
     /* background-color: #273746; */
-    border-bottom: solid 8px #1B5E20;
+    border-bottom: solid 10px #1B5E20;
     /* border-bottom: solid 8px #9CCC65; */
 }
 
