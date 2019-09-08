@@ -119,13 +119,13 @@ body {
 }
 
 ::placeholder {
-  color: white;
+  color: rgba(208, 211, 212, 0.7);
   opacity: 1; /* Firefox */
 }
 
 .btn {
   margin-top: 25px;
-  padding: 15px;
+  padding: 10px;
   width: 200px;
   font-size: 20px;
   border-radius: 5px;
