@@ -139,3 +139,7 @@ section .overlay-wcs {
   font-size: 20px;
   font-weight: lighter;
 }
+
+#logo {
+  background-color: white;
+}
