@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: #D1D3D2;
+}
+
+.container {
+  text-align: center;
+}
+
+#map {
+  text-align: center;
+  margin-left: 6%;
+  margin-top: 25px;
+  height: 500px;
+  width: 1200px;
+}
+
+#title {
+  margin-top: 2%;
+  border-bottom: 5px white solid;
+  display: inline-block;
+  padding: 5px;
+}
