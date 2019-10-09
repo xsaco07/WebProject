@@ -44,12 +44,13 @@ class UserDBModel {
     return $selected_user;
   }
 
-  public function updateUser($userName, $newUser) {
-    $statement = $this->DBconnection->prepare("UPDATE User SET pageUserName = ?, userName = ?, lastName1 = ?, lastName2 = ?, password = ?, email = ?, phoneNumber = ?, areaCode = ? WHERE pageUserName = ?;");
+  public function updatePassword($pageUserName, $newPassword) {
+    $statement = $this->DBconnection->prepare("UPDATE users SET password = ? WHERE pageUserName = ?;");
     // All parameters are strings
-    $statement->bind_param("sssssssss", $newUser->pageUserName, $newUser->userName, $newUser->lastName1, $newUser->lastName2, $newUser->password, $newUser->email, $newUser->phoneNumber, $newUser->areaCode, $userName);
+    $statement->bind_param("ss", $newPassword, $pageUserName);
     $statement->execute();
-    $this->DBconnection.close();
+    $statement->close();
+    $this->DBconnection->close();
   }
 
   // Takes a database query result, fetches it's data and create a User object
