@@ -8,15 +8,30 @@ class UserDBModel {
   }
 
   public function insertUser($user) {
-      $statement = $this->DBconnection->prepare("INSERT INTO User VALUES (?, ?, ?, ?, ?, ?, ?, ?);");
-      // All parameters are strings
-      $statement->bind_param("ssssssss", $user->pageUserName, $user->userName, $user->lastName1, $user->lastName2, $user->password, $user->email, $user->phoneNumber, $user->areaCode);
-      $statement->execute();
-      $this->DBconnection.close();
+      $result = False;
+      echo $result;
+      if ($statement = $this->DBconnection->prepare("INSERT INTO users VALUES (?, ?, ?, ?, ?, ?, ?, ?);")) {
+
+        // Save user atribbutes
+        $pageUserName = $user->getPageUserName();
+        $userName = $user->getUserName();
+        $lastName1 = $user->getLastName1();
+        $lastName2 = $user->getLastName2();
+        $password = $user->getPassword();
+        $email = $user->getEmail();
+        $phoneNumber = $user->getPhoneNumber();
+        $areaCode = $user->getAreaCode();
+
+        // All parameters are strings
+        $statement->bind_param("ssssssss", $pageUserName, $userName, $lastName1, $lastName2, $password, $email, $phoneNumber, $areaCode);
+        $result = $statement->execute();
+        $statement->close();
+      }
+      $this->DBconnection->close();
+      return $result;
   }
 
   public function getUser($userName) {
-    //echo "<br>".$this->DBconnection == NULL."<br>";
     if ($statement = $this->DBconnection->prepare("SELECT * FROM users WHERE pageUserName = ?")) {
       $statement->bind_param("s", $userName); // "s" because paramater is a string
       $statement->execute();
@@ -42,14 +57,6 @@ class UserDBModel {
   private function queryToUser($queryResult) {
     if ($queryResult->num_rows > 0) {
       $row = $queryResult->fetch_assoc();
-      // echo $row['pageUserName'];
-      // echo $row['userName'];
-      // echo $row['lastName1'];
-      // echo $row['lastName2'];
-      // echo $row['password'];
-      // echo $row['email'];
-      // echo $row['phoneNumber'];
-      // echo $row['areaCode'];
       return new User($row['pageUserName'], $row['userName'], $row['lastName1'], $row['lastName2'], $row['password'], $row['email'], $row['phoneNumber'], $row['areaCode']);
     }
     else {

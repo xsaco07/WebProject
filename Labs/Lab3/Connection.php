@@ -18,7 +18,7 @@ class Connection {
           die("Connection failed: " . self::$DBconnection->connect_error);
       }
 
-      echo "Connected successfully to server";
+      //echo "Connected successfully to server";
       return self::$DBconnection;
   }
 

@@ -8,7 +8,10 @@
 
   $pageUserName = $_POST['pageUserName'];
   $password = $_POST['password'];
+
   $homePage = "home.html";
+  $loginPage = "login.html";
+  $registerPage = "register.html";
 
   // Call Validator class
   //isValid(username)
@@ -26,9 +29,10 @@
     include_once $homePage;
   }
   else {
-    echo "\n".$pageUserName;
-    echo "\n".$password." vs ".$userRetrieved->getPageUserName();
+    // echo "\n".$pageUserName;
+    // echo "\n".$password." vs ".$userRetrieved->getPageUserName();
     echo "\nUser credentials not valid";
+    include_once $loginPage;
   }
 
 ?>

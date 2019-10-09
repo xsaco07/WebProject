@@ -23,8 +23,14 @@
 
     }
 
+    public function getUserName() {return $this->userName;}
     public function getPassword() {return $this->password;}
     public function getPageUserName() {return $this->pageUserName;}
+    public function getLastName1() {return $this->lastName1;}
+    public function getLastName2() {return $this->lastName2;}
+    public function getEmail() {return $this->email;}
+    public function getPhoneNumber() {return $this->phoneNumber;}
+    public function getAreaCode() {return $this->areaCode;}
 
   }
 ?>
