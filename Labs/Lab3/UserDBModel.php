@@ -1,4 +1,6 @@
 <?php
+include "Validator.php";
+
 class UserDBModel {
 
   private $DBconnection;
@@ -7,9 +9,19 @@ class UserDBModel {
       $this->DBconnection = $DBconnection;
   }
 
+  // Returns True if success or a String of the error if failed
   public function insertUser($user) {
-      $result = False;
-      echo $result;
+      $result = True;
+
+      // Validate the user fields
+      $result = Validator::validateUser($user);
+      // echo "res in model [$result] <br>";
+      if( ! is_integer($result)){
+        // if result is not integer ...
+        // echo "insert failed <br>";
+        return $result;
+      }
+      // echo "continuing <br>";
       if ($statement = $this->DBconnection->prepare("INSERT INTO users VALUES (?, ?, ?, ?, ?, ?, ?, ?);")) {
 
         // Save user atribbutes
@@ -28,8 +40,10 @@ class UserDBModel {
         $statement->close();
       }
       $this->DBconnection->close();
-      return $result;
+      return ($result) ? Validator::$OK : "Query failed";
   }
+
+
 
   public function getUser($userName) {
     if ($statement = $this->DBconnection->prepare("SELECT * FROM users WHERE pageUserName = ?")) {
@@ -65,5 +79,7 @@ class UserDBModel {
       return NULL;
     }
   }
+
+
 }
 ?>

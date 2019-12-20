@@ -30,13 +30,13 @@
   $user = new User($pageUserName, $userName, $lastName1, $lastName2, $password, $email, $phoneNumber, $areaCode);
 
   $status = $model->insertUser($user);
-
-  if ($status) {
+  if ( is_integer($status) ) {
     echo "Register successfully";
     include_once $loginPage;
   }
   else {
-    echo "Register failed";
+    echo "<h2> Register failed </h2>";
+    echo "<h4> $status </h4>";
   }
 
 
